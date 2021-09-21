@@ -793,6 +793,7 @@ int main() {
         moveOver = toupper(moveOver);
         moveTo = toupper(moveTo);
 
+        // Call checkMove() function to check user input.
         checkMove();
      } //end while( numberOfPieces > 1)
 
