@@ -752,7 +752,8 @@ void checkMove()
 
 // ----------------------------------------------------------------------
 // Main section of the program, containing the game play loop
-int main() {
+int main()
+{
     displayInstructions();
 
     // Set board values to the default starting position
@@ -761,8 +762,9 @@ int main() {
     numberOfPieces = 12;
     moveNumber = 1;
 
-    // Game play loop
+    // Display board
     displayBoard();
+    // Game play loop
     while(numberOfPieces > 1) {
         cout << moveNumber << ". " << "Enter positions from, jump, and to (e.g. EFG): "; // Read just the first user input, handling inputs 'X' or 'R'
         cin >> moveFrom;
